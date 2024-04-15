@@ -1,0 +1,52 @@
+Args:
+	input_size          : 12
+	batch_size          : 1
+	hidden_size         : 64
+	num_layers          : 3
+	num_epochs          : 25
+	learning_rate       : 0.001
+	learning_rate_decay_interval: 5
+	learning_rate_decay_rate: 0.5
+	weight_decay        : 0.0
+	gradient_accumulations: 16
+	load_weights_from   : None
+	finetune_model      : False
+	device              : cpu
+	data_folder         : Data_Test/DataTraining_Adjust
+	train_eval_test_ratio: [0.9, 0.1, 0.0]
+	do_data_augment     : True
+	classes_txt         : config/classes.names
+	num_classes         : 14
+	plot_accu           : True
+	show_plotted_accu   : False
+	save_model_to       : checkpoints/
+	save_log_to         : checkpoints/log.txt
+	save_fig_to         : checkpoints/fig.jpg
+
+Accuracies:
+	Epoch     Train     Eval      Test      
+	1         0.106     0.146     -0.100    
+	2         0.143     0.186     -0.100    
+	3         0.181     0.257     -0.100    
+	4         0.274     0.362     -0.100    
+	5         0.347     0.406     -0.100    
+	6         0.415     0.510     -0.100    
+	7         0.493     0.563     -0.100    
+	8         0.581     0.642     -0.100    
+	9         0.650     0.695     -0.100    
+	10        0.720     0.810     -0.100    
+	11        0.788     0.856     -0.100    
+	12        0.806     0.851     -0.100    
+	13        0.821     0.874     -0.100    
+	14        0.835     0.887     -0.100    
+	15        0.848     0.895     -0.100    
+	16        0.854     0.900     -0.100    
+	17        0.866     0.906     -0.100    
+	18        0.877     0.904     -0.100    
+	19        0.875     0.906     -0.100    
+	20        0.883     0.908     -0.100    
+	21        0.878     0.912     -0.100    
+	22        0.886     0.916     -0.100    
+	23        0.891     0.914     -0.100    
+	24        0.887     0.918     -0.100    
+	25        0.887     0.912     -0.100    
